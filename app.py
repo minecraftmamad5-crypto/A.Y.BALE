@@ -9,7 +9,13 @@ Whether requests cost money depends on the chosen model and account balance.
 
 import time
 import requests
+from flask import Flask
 
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "EXPERA AI is running!"
 # Paste your Bale bot token here. Keep it private.
 BALE_TOKEN = "720774043:sLMEly9opMeT-y_MUo3BvSMXPdaRCMNlox0"
 
